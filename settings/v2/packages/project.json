@@ -1,0 +1,20 @@
+{
+  "layer": [
+    {
+      "name": "first",
+      "value": 1
+    },
+    {
+      "name": "color",
+      "value": 2
+    },
+    {
+      "name": "blur",
+      "value": 4
+    },
+    {
+      "name": "final",
+      "value": 8
+    }
+  ]
+}

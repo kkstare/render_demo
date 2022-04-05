@@ -1,0 +1,109 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9",
+  "files": [],
+  "subMetas": {
+    "ee0b1": {
+      "importer": "gltf-mesh",
+      "uuid": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@ee0b1",
+      "displayName": "",
+      "id": "ee0b1",
+      "name": "TB_Env_River_A.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4f45": {
+      "importer": "gltf-embeded-image",
+      "uuid": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@d4f45",
+      "displayName": "",
+      "id": "d4f45",
+      "name": "Map #2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1da29": {
+      "importer": "texture",
+      "uuid": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@1da29",
+      "displayName": "",
+      "id": "1da29",
+      "name": "Map #2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@d4f45"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "320f8": {
+      "importer": "gltf-scene",
+      "uuid": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@320f8",
+      "displayName": "",
+      "id": "320f8",
+      "name": "TB_Env_River_A.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #2",
+        "uri": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@d4f45"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@320f8",
+    "assetFinder": {
+      "meshes": [
+        "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@ee0b1"
+      ],
+      "skeletons": [],
+      "textures": [
+        "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@1da29"
+      ],
+      "materials": [
+        "8992e19f-693d-4642-bbc3-afd17dc8821f"
+      ],
+      "scenes": [
+        "3d6e059f-1d23-4981-a1fa-fa96abfd6aa9@320f8"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/models/Materials_TB_Env_River_A"
+  }
+}

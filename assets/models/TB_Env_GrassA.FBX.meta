@@ -1,0 +1,109 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cf33172c-3360-40ee-8712-a451524b8808",
+  "files": [],
+  "subMetas": {
+    "b968a": {
+      "importer": "gltf-mesh",
+      "uuid": "cf33172c-3360-40ee-8712-a451524b8808@b968a",
+      "displayName": "",
+      "id": "b968a",
+      "name": "TB_Env_GrassA.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4f45": {
+      "importer": "gltf-embeded-image",
+      "uuid": "cf33172c-3360-40ee-8712-a451524b8808@d4f45",
+      "displayName": "",
+      "id": "d4f45",
+      "name": "Map #2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1da29": {
+      "importer": "texture",
+      "uuid": "cf33172c-3360-40ee-8712-a451524b8808@1da29",
+      "displayName": "",
+      "id": "1da29",
+      "name": "Map #2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cf33172c-3360-40ee-8712-a451524b8808@d4f45"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "697ee": {
+      "importer": "gltf-scene",
+      "uuid": "cf33172c-3360-40ee-8712-a451524b8808@697ee",
+      "displayName": "",
+      "id": "697ee",
+      "name": "TB_Env_GrassA.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #2",
+        "uri": "cf33172c-3360-40ee-8712-a451524b8808@d4f45"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "cf33172c-3360-40ee-8712-a451524b8808@697ee",
+    "assetFinder": {
+      "meshes": [
+        "cf33172c-3360-40ee-8712-a451524b8808@b968a"
+      ],
+      "skeletons": [],
+      "textures": [
+        "cf33172c-3360-40ee-8712-a451524b8808@1da29"
+      ],
+      "materials": [
+        "37fa0469-3113-474c-9828-546985ecf686"
+      ],
+      "scenes": [
+        "cf33172c-3360-40ee-8712-a451524b8808@697ee"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/models/Materials_TB_Env_GrassA"
+  }
+}
