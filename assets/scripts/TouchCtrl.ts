@@ -19,18 +19,21 @@ export class TouchCtrl extends Component {
     }
 
     private onTouchRotateMove(event: EventTouch) {
+        console.log("touch")
         let rotateDelta = event.getDelta();
 		if (rotateDelta.length() > 1) {
-            this.camera.rotateByCenter(new Vec3(rotateDelta.y * 0.5, -rotateDelta.x, 0));
+            this.rotateByCenter(new Vec3(rotateDelta.y * 0.5, -rotateDelta.x, 0));
         }
 
     }
 
         /**视角旋转-围绕中心 */
     rotateByCenter(addVec3: Vec3) {
-        let mEv = this.node.eulerAngles.clone().add(addVec3.multiplyScalar(3));
-        mEv.x = Math.min(Math.max(this.limitRotateY[0], mEv.x), this.limitRotateY[1]);
-        this.node.eulerAngles = this.node.eulerAngles.clone().lerp(mEv, 0.1);
+        console.log(addVec3)
+
+        let mEv = this.camera.node.eulerAngles.clone().add(addVec3.multiplyScalar(3));
+
+        this.camera.node.eulerAngles = this.camera.node.eulerAngles.clone().lerp(mEv, 0.1);
 
     }
 }

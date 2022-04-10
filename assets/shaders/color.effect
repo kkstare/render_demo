@@ -17,6 +17,7 @@ CCEffect %{
         cullMode: none
       properties:
         alphaThreshold: { value: 0.5 }
+        renderType: {value: 0.0 }
 }%
 
 CCProgram sprite-vs %{
@@ -66,6 +67,10 @@ CCProgram sprite-fs %{
   #include <alpha-test>
 
   in vec4 color;
+  uniform block{
+    float renderType;
+  };
+
 
   #if USE_TEXTURE
     in vec2 uv0;
@@ -83,10 +88,15 @@ CCProgram sprite-fs %{
         o.r = o.g = o.b = gray;
       #endif
     #endif
-
     o *= color;
-    o.g *= 0.1;
-    // o = vec4(0.0,0.5,0.,1.);
+
+    if(renderType < 1.0){
+      o.r *= 0.299;
+      o.g *= 0.587;
+      o.b *= 0.114;
+    }
+
+   
     ALPHA_TEST(o);
     return o;
   }
