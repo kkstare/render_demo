@@ -7,17 +7,20 @@ CCEffect %{
       depthStencilState:
         depthTest: false
         depthWrite: false
-      blendState:
-        targets:
-        - blend: true
-          blendSrc: src_alpha
-          blendDst: one_minus_src_alpha
-          blendDstAlpha: one_minus_src_alpha
+      # blendState:
+      #   targets:
+      #   - blend: true
+      #     blendSrc: src_alpha
+      #     blendDst: one_minus_src_alpha
+      #     blendDstAlpha: one_minus_src_alpha
       rasterizerState:
         cullMode: none
       properties:
         alphaThreshold: { value: 0.5 }
-        renderType: {value: 0.0 }
+        renderType: {value: 5.5 }
+        uSize: {value: [300,300] }
+        
+
 }%
 
 CCProgram sprite-vs %{
@@ -68,7 +71,9 @@ CCProgram sprite-fs %{
 
   in vec4 color;
   uniform block{
+    vec2 uSize;
     float renderType;
+
   };
 
 
@@ -77,6 +82,32 @@ CCProgram sprite-fs %{
     #pragma builtin(local)
     layout(set = 2, binding = 11) uniform sampler2D cc_spriteTexture;
   #endif
+
+  vec4 PencilSketch_main(sampler2D Tex, vec2 UV, vec2 Size, float Intensity) 
+	{
+	    vec2 offset = vec2(1.0 / Size);
+	    vec3 weight = vec3(0.1125, 0.3154, 0.0721);
+	    vec3 texColor = texture(Tex, UV).rgb;
+	    vec2 stp0 = vec2(offset.x, 0.0);
+	    vec2 st0p = vec2(0.0, offset.y);
+	    vec2 stpp = vec2(offset.x, offset.y);
+	    vec2 stpm = vec2(offset.x, -offset.y);
+	    float i00 = dot(texColor, weight);
+	    float im1m1 = dot(texture(Tex, UV - stpp).rgb, weight);
+	    float ip1p1 = dot(texture(Tex, UV + stpp).rgb, weight);
+	    float im1p1 = dot(texture(Tex, UV - stpm).rgb, weight);
+	    float ip1m1 = dot(texture(Tex, UV + stpm).rgb, weight);
+	    float im10 = dot(texture(Tex, UV - stp0).rgb, weight);
+	    float ip10 = dot(texture(Tex, UV + stp0).rgb, weight);
+	    float i0m1 = dot(texture(Tex, UV - st0p).rgb, weight);
+	    float i0p1 = dot(texture(Tex, UV + st0p).rgb, weight);
+	    float h = -im1p1 - 2.0 * i0p1 - ip1p1 + im1m1 + 2.0 * i0m1 + ip1m1;
+	    float v = -im1m1 - 2.0 * im10 - im1p1 + ip1m1 + 2.0 * ip10 + ip1p1;
+	    float mag = 1.0 - length(vec2(h, v));
+	    vec3 target = vec3(mag);
+	    return vec4(mix(texColor, target, Intensity), texture(Tex, UV).a);
+	}
+	    
 
   vec4 frag () {
     vec4 o = vec4(1, 1, 1, 1);
@@ -91,9 +122,39 @@ CCProgram sprite-fs %{
     o *= color;
 
     if(renderType < 1.0){
-      o.r *= 0.299;
-      o.g *= 0.587;
-      o.b *= 0.114;
+      //置灰
+      float gray  = 0.2126 * o.r + 0.7152 * o.g + 0.0722 * o.b;
+      o.r = o.g = o.b = gray;
+    }else if(renderType < 2.0){
+      //老照片
+      vec4 color = o;
+      float _r = color.r * 0.393 + color.g * 0.769 + color.b * 0.189;
+      float _g = color.r * 0.349 + color.g * 0.686 + color.b * 0.168;
+      float _b = color.r * 0.272 + color.g * 0.534 + color.b * 0.131;
+      o = vec4(_r, _g, _b, color.a);
+    }else if(renderType < 3.0){
+      //熔铸
+      vec4 col = o;
+      float _r = col.r*col.r;
+      float _g = col.g*col.g;
+      float _b = col.b*col.b;
+
+      o = vec4(_r, _g, _b, col.a);
+    }else if(renderType < 4.0){
+      //铅笔素描
+      o =  PencilSketch_main(cc_spriteTexture, uv0, uSize, 0.5);
+    }else if(renderType < 5.0){
+      //睁眼效果
+      float Intensity = 3.0;
+      float subDis = 0.3;
+
+      float dis = distance(uv0,vec2(0.5,0.5) );
+      float grayValue = 0.5 - Intensity*(dis-subDis);
+      o *= grayValue; 
+    }else if(renderType < 6.0){
+      //两侧径向模糊
+      
+
     }
 
    
