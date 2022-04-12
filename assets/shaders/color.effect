@@ -17,7 +17,7 @@ CCEffect %{
         cullMode: none
       properties:
         alphaThreshold: { value: 0.5 }
-        renderType: {value: 5.5 }
+        renderType: {value: 0.5 }
         uSize: {value: [300,300] }
         
 
@@ -153,8 +153,44 @@ CCProgram sprite-fs %{
       o *= grayValue; 
     }else if(renderType < 6.0){
       //两侧径向模糊
-      
+      vec2 Center = vec2(0.5,0.5);
+      vec2 normalizedSize = vec2(1.0 / uSize);
+      float Intensity = 0.1;
+      vec2 UV = uv0;
 
+      vec4 sum = vec4(0.0);
+      UV += normalizedSize * 0.5 - Center;
+      for (float i = 0.0; i < 30.0; i++) {
+          float offset = 1.0 - Intensity * (i / (30.0 - 1.0));
+          sum += CCSampleWithAlphaSeparated(cc_spriteTexture, UV * offset + Center);
+      }
+      return vec4(sum / (30.0 - 1.0));
+    }else if(renderType < 7.0){
+      float Seed = 0.5;
+      float Speed = 0.5;
+
+      vec2 uv = uv0;
+      vec4 col = CCSampleWithAlphaSeparated(cc_spriteTexture, uv);
+      vec3 color = vec3(0.);
+      float radius = 0.5 + cos( Seed ) * .5;
+      float gradientLength = abs( sin( Seed * 3. ) * .1 );
+      vec2 p =  2. * ( uv ) - 1.;
+      p.x *= uSize.x / uSize.y;
+      vec2 le = vec2( -.4, 0. );
+      vec2 re = vec2(  .4, 0. );
+      float d = max(  ( 1.-( distance( p, le ) * radius )  ) ,  ( 1.-( distance( p, re ) * radius )  ) );
+      vec3 rgb = mix( color, col.rgb, smoothstep( 0.5, 0.5 + gradientLength, d ) );
+      return vec4( rgb, col.a);
+    }else if(renderType < 8.0){
+      // vec2 uv = uv0;
+      // vec4 tex0 = CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
+      // vec4 tex1 = CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
+      // vec4 col = vec4(0.);
+      // float a = noise(uv);
+      // float blend = sin(mod(Seed, Interval)) * Speed + .5 ;
+      // blend = step(a, blend);
+      // col = mix(tex0, tex1, blend);
+      // return col;
     }
 
    
