@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9",
+  "files": [],
+  "subMetas": {
+    "1399f": {
+      "importer": "gltf-mesh",
+      "uuid": "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@1399f",
+      "displayName": "",
+      "id": "1399f",
+      "name": "polySurface585.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d5851": {
+      "importer": "texture",
+      "uuid": "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@d5851",
+      "displayName": "",
+      "id": "d5851",
+      "name": "file15.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Stones_01.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3465a": {
+      "importer": "gltf-material",
+      "uuid": "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@3465a",
+      "displayName": "",
+      "id": "3465a",
+      "name": "Stones1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d81ed": {
+      "importer": "gltf-scene",
+      "uuid": "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@d81ed",
+      "displayName": "",
+      "id": "d81ed",
+      "name": "Rock_03.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file15",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Stones_01.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@d81ed",
+    "assetFinder": {
+      "meshes": [
+        "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@1399f"
+      ],
+      "skeletons": [],
+      "textures": [
+        "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@d5851"
+      ],
+      "materials": [
+        "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@3465a"
+      ],
+      "scenes": [
+        "bbf7a04a-ad4f-4d75-b65d-cad1341df9b9@d81ed"
+      ]
+    }
+  }
+}

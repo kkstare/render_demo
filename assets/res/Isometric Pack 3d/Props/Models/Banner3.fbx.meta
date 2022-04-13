@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f3711085-e42b-444a-9408-fa6ce6067495",
+  "files": [],
+  "subMetas": {
+    "58ae6": {
+      "importer": "gltf-mesh",
+      "uuid": "f3711085-e42b-444a-9408-fa6ce6067495@58ae6",
+      "displayName": "",
+      "id": "58ae6",
+      "name": "polySurface2069.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fe32e": {
+      "importer": "texture",
+      "uuid": "f3711085-e42b-444a-9408-fa6ce6067495@fe32e",
+      "displayName": "",
+      "id": "fe32e",
+      "name": "file32.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Banner.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "39e38": {
+      "importer": "gltf-material",
+      "uuid": "f3711085-e42b-444a-9408-fa6ce6067495@39e38",
+      "displayName": "",
+      "id": "39e38",
+      "name": "Banner.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3c584": {
+      "importer": "gltf-scene",
+      "uuid": "f3711085-e42b-444a-9408-fa6ce6067495@3c584",
+      "displayName": "",
+      "id": "3c584",
+      "name": "Banner3.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file32",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Banner.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "f3711085-e42b-444a-9408-fa6ce6067495@3c584",
+    "assetFinder": {
+      "meshes": [
+        "f3711085-e42b-444a-9408-fa6ce6067495@58ae6"
+      ],
+      "skeletons": [],
+      "textures": [
+        "f3711085-e42b-444a-9408-fa6ce6067495@fe32e"
+      ],
+      "materials": [
+        "f3711085-e42b-444a-9408-fa6ce6067495@39e38"
+      ],
+      "scenes": [
+        "f3711085-e42b-444a-9408-fa6ce6067495@3c584"
+      ]
+    }
+  }
+}

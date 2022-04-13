@@ -1,4 +1,4 @@
-import { Camera, Component, EventKeyboard, EventTouch, input, Input, KeyCode, Node, Vec2, Vec3, _decorator } from "cc";
+import { Camera, Component, director, EventKeyboard, EventTouch, input, Input, KeyCode, Node, Sprite, sys, System, Touch, Vec2, Vec3, view, _decorator } from "cc";
 
 
 
@@ -12,12 +12,16 @@ export class TouchCtrl extends Component {
     camera:Camera = null!
 
 
+
     private keyBoard = [0,0]
 
-    start () {
+    start() {
         this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchRotateMove.bind(this), this);
-    }
 
+        this.node.on(Node.EventType.TOUCH_END, this.onTouchEnd.bind(this), this);
+
+    }
+  
     private onTouchRotateMove(event: EventTouch) {
         console.log("touch")
         let rotateDelta = event.getDelta();
@@ -26,7 +30,15 @@ export class TouchCtrl extends Component {
         }
 
     }
-
+    onTouchEnd(e:Touch) {
+        // console.log(e.getLocationInView())
+        let pos = e.getLocation()
+        let winWidth = view.getVisibleSizeInPixel().width
+        let winHeight = view.getVisibleSizeInPixel().height
+        console.log(pos.x / winWidth, pos.y / winHeight)
+        
+        director.emit("touchEnd",[pos.x / winWidth,(pos.y / winHeight)])
+    }
         /**视角旋转-围绕中心 */
     rotateByCenter(addVec3: Vec3) {
         console.log(addVec3)

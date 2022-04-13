@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3ae03671-87f6-4116-a3c0-71b91d58dac9",
+  "files": [],
+  "subMetas": {
+    "14163": {
+      "importer": "gltf-scene",
+      "uuid": "3ae03671-87f6-4116-a3c0-71b91d58dac9@14163",
+      "displayName": "",
+      "id": "14163",
+      "name": "Dungeon_Passage1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e5681": {
+      "importer": "gltf-mesh",
+      "uuid": "3ae03671-87f6-4116-a3c0-71b91d58dac9@e5681",
+      "displayName": "",
+      "id": "e5681",
+      "name": "Dungeon_passage_polySurface20.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9776f": {
+      "importer": "texture",
+      "uuid": "3ae03671-87f6-4116-a3c0-71b91d58dac9@9776f",
+      "displayName": "",
+      "id": "9776f",
+      "name": "file21.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Dungeon_passage.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "33fbc": {
+      "importer": "gltf-material",
+      "uuid": "3ae03671-87f6-4116-a3c0-71b91d58dac9@33fbc",
+      "displayName": "",
+      "id": "33fbc",
+      "name": "Dungeon_passage.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file21",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Dungeon_passage.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "3ae03671-87f6-4116-a3c0-71b91d58dac9@14163",
+    "assetFinder": {
+      "meshes": [
+        "3ae03671-87f6-4116-a3c0-71b91d58dac9@e5681"
+      ],
+      "skeletons": [],
+      "textures": [
+        "3ae03671-87f6-4116-a3c0-71b91d58dac9@9776f"
+      ],
+      "materials": [
+        "3ae03671-87f6-4116-a3c0-71b91d58dac9@33fbc"
+      ],
+      "scenes": [
+        "3ae03671-87f6-4116-a3c0-71b91d58dac9@14163"
+      ]
+    }
+  }
+}

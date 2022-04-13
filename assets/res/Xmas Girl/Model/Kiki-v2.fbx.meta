@@ -1,0 +1,274 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "0c73b": {
+      "importer": "gltf-mesh",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@0c73b",
+      "displayName": "",
+      "id": "0c73b",
+      "name": "Hat.001.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1b721": {
+      "importer": "gltf-mesh",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@1b721",
+      "displayName": "",
+      "id": "1b721",
+      "name": "Face.003_Material0.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aae7c": {
+      "importer": "gltf-mesh",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@aae7c",
+      "displayName": "",
+      "id": "aae7c",
+      "name": "Hair.002_Material0.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9c6b6": {
+      "importer": "gltf-mesh",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@9c6b6",
+      "displayName": "",
+      "id": "9c6b6",
+      "name": "Dress.005.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cbc2b": {
+      "importer": "gltf-animation",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@cbc2b",
+      "displayName": "",
+      "id": "cbc2b",
+      "name": "Scene.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 6.233333110809326
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 65
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0cb8c": {
+      "importer": "gltf-material",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@0cb8c",
+      "displayName": "",
+      "id": "0cb8c",
+      "name": "X-masDress.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "33f5e": {
+      "importer": "gltf-material",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@33f5e",
+      "displayName": "",
+      "id": "33f5e",
+      "name": "Face.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f34c": {
+      "importer": "gltf-material",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@4f34c",
+      "displayName": "",
+      "id": "4f34c",
+      "name": "Eye.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3d298": {
+      "importer": "gltf-material",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@3d298",
+      "displayName": "",
+      "id": "3d298",
+      "name": "EyeBrowAndlash.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "312bf": {
+      "importer": "gltf-material",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@312bf",
+      "displayName": "",
+      "id": "312bf",
+      "name": "Hair.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2c70d": {
+      "importer": "gltf-material",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@2c70d",
+      "displayName": "",
+      "id": "2c70d",
+      "name": "Hair lightReflect.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b2840": {
+      "importer": "gltf-scene",
+      "uuid": "3bd5273e-2429-42d7-8475-87b17c7bd589@b2840",
+      "displayName": "",
+      "id": "b2840",
+      "name": "Kiki-v2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "animationImportSettings": [
+      {
+        "name": "Scene",
+        "duration": 6.233333110809326,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Scene",
+            "from": 0,
+            "to": 6.233333110809326,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "3bd5273e-2429-42d7-8475-87b17c7bd589@b2840",
+    "assetFinder": {
+      "meshes": [
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@0c73b",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@1b721",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@aae7c",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@9c6b6"
+      ],
+      "skeletons": [
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@0cb8c",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@33f5e",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@4f34c",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@3d298",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@312bf",
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@2c70d"
+      ],
+      "scenes": [
+        "3bd5273e-2429-42d7-8475-87b17c7bd589@b2840"
+      ]
+    }
+  }
+}

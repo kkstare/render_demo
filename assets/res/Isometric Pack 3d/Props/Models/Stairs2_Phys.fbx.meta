@@ -1,0 +1,76 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "8b04f1a7-5266-47c9-9d02-2a950ff7fd47",
+  "files": [],
+  "subMetas": {
+    "fbf21": {
+      "importer": "gltf-mesh",
+      "uuid": "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@fbf21",
+      "displayName": "",
+      "id": "fbf21",
+      "name": "polySurface677.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6cdfe": {
+      "importer": "gltf-material",
+      "uuid": "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@6cdfe",
+      "displayName": "",
+      "id": "6cdfe",
+      "name": "Physics.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d8a56": {
+      "importer": "gltf-scene",
+      "uuid": "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@d8a56",
+      "displayName": "",
+      "id": "d8a56",
+      "name": "Stairs2_Phys.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@d8a56",
+    "assetFinder": {
+      "meshes": [
+        "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@fbf21"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@6cdfe"
+      ],
+      "scenes": [
+        "8b04f1a7-5266-47c9-9d02-2a950ff7fd47@d8a56"
+      ]
+    }
+  }
+}

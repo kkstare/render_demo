@@ -1,0 +1,839 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee",
+  "files": [],
+  "subMetas": {
+    "19444": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@19444",
+      "displayName": "",
+      "id": "19444",
+      "name": "map8.material",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "77798": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@77798",
+      "displayName": "",
+      "id": "77798",
+      "name": "map3.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ce6b6": {
+      "importer": "gltf-mesh",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@ce6b6",
+      "displayName": "",
+      "id": "ce6b6",
+      "name": "House_Material2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2dc2f": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@2dc2f",
+      "displayName": "",
+      "id": "2dc2f",
+      "name": "map13.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4ac2f": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4ac2f",
+      "displayName": "",
+      "id": "4ac2f",
+      "name": "map14.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "48e53": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@48e53",
+      "displayName": "",
+      "id": "48e53",
+      "name": "map15.image",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7632e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7632e",
+      "displayName": "",
+      "id": "7632e",
+      "name": "map16.image",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "370fa": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@370fa",
+      "displayName": "",
+      "id": "370fa",
+      "name": "map1.image",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f62ec": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@f62ec",
+      "displayName": "",
+      "id": "f62ec",
+      "name": "map2.image",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4c907": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4c907",
+      "displayName": "",
+      "id": "4c907",
+      "name": "map3.image",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7cc69": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7cc69",
+      "displayName": "",
+      "id": "7cc69",
+      "name": "map4.image",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7e6c4": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7e6c4",
+      "displayName": "",
+      "id": "7e6c4",
+      "name": "map5.image",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6dcca": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@6dcca",
+      "displayName": "",
+      "id": "6dcca",
+      "name": "map6.image",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43b1b": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@43b1b",
+      "displayName": "",
+      "id": "43b1b",
+      "name": "map7.image",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "04bad": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@04bad",
+      "displayName": "",
+      "id": "04bad",
+      "name": "map8.image",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a381b": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@a381b",
+      "displayName": "",
+      "id": "a381b",
+      "name": "map13.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@2dc2f"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "092d3": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@092d3",
+      "displayName": "",
+      "id": "092d3",
+      "name": "map14.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4ac2f"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "13b8e": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@13b8e",
+      "displayName": "",
+      "id": "13b8e",
+      "name": "map15.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@48e53"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bdcdc": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@bdcdc",
+      "displayName": "",
+      "id": "bdcdc",
+      "name": "map16.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7632e"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c4239": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@c4239",
+      "displayName": "",
+      "id": "c4239",
+      "name": "map1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@370fa"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ff76e": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@ff76e",
+      "displayName": "",
+      "id": "ff76e",
+      "name": "map2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@f62ec"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0c525": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@0c525",
+      "displayName": "",
+      "id": "0c525",
+      "name": "map3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4c907"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fd97d": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@fd97d",
+      "displayName": "",
+      "id": "fd97d",
+      "name": "map4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7cc69"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3f8ec": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@3f8ec",
+      "displayName": "",
+      "id": "3f8ec",
+      "name": "map5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7e6c4"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "287c3": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@287c3",
+      "displayName": "",
+      "id": "287c3",
+      "name": "map6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@6dcca"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f28ad": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@f28ad",
+      "displayName": "",
+      "id": "f28ad",
+      "name": "map7.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@43b1b"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e32dc": {
+      "importer": "texture",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@e32dc",
+      "displayName": "",
+      "id": "e32dc",
+      "name": "map8.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@04bad"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7abdf": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7abdf",
+      "displayName": "",
+      "id": "7abdf",
+      "name": "map13.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4b52b": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4b52b",
+      "displayName": "",
+      "id": "4b52b",
+      "name": "map14.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "01de3": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@01de3",
+      "displayName": "",
+      "id": "01de3",
+      "name": "map15.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e5289": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@e5289",
+      "displayName": "",
+      "id": "e5289",
+      "name": "map16.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "02311": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@02311",
+      "displayName": "",
+      "id": "02311",
+      "name": "map1.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7e4b1": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7e4b1",
+      "displayName": "",
+      "id": "7e4b1",
+      "name": "map2.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1d4cf": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@1d4cf",
+      "displayName": "",
+      "id": "1d4cf",
+      "name": "map4.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6cdc0": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@6cdc0",
+      "displayName": "",
+      "id": "6cdc0",
+      "name": "map5.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7211e": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7211e",
+      "displayName": "",
+      "id": "7211e",
+      "name": "map6.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "98d9a": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@98d9a",
+      "displayName": "",
+      "id": "98d9a",
+      "name": "map7.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dc2db": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@dc2db",
+      "displayName": "",
+      "id": "dc2db",
+      "name": "map9.material",
+      "userData": {
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "26ffd": {
+      "importer": "gltf-material",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@26ffd",
+      "displayName": "",
+      "id": "26ffd",
+      "name": "map10.material",
+      "userData": {
+        "gltfIndex": 13
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "086c2": {
+      "importer": "gltf-scene",
+      "uuid": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@086c2",
+      "displayName": "",
+      "id": "086c2",
+      "name": "House4.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "map13",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@2dc2f"
+      },
+      {
+        "name": "map14",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4ac2f"
+      },
+      {
+        "name": "map15",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@48e53"
+      },
+      {
+        "name": "map16",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7632e"
+      },
+      {
+        "name": "map1",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@370fa"
+      },
+      {
+        "name": "map2",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@f62ec"
+      },
+      {
+        "name": "map3",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4c907"
+      },
+      {
+        "name": "map4",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7cc69"
+      },
+      {
+        "name": "map5",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7e6c4"
+      },
+      {
+        "name": "map6",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@6dcca"
+      },
+      {
+        "name": "map7",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@43b1b"
+      },
+      {
+        "name": "map8",
+        "uri": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@04bad"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@086c2",
+    "assetFinder": {
+      "meshes": [
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@ce6b6"
+      ],
+      "skeletons": [],
+      "textures": [
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@a381b",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@092d3",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@13b8e",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@bdcdc",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@c4239",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@ff76e",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@0c525",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@fd97d",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@3f8ec",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@287c3",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@f28ad",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@e32dc"
+      ],
+      "materials": [
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7abdf",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@4b52b",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@01de3",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@e5289",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@02311",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7e4b1",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@77798",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@1d4cf",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@6cdc0",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@7211e",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@98d9a",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@19444",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@dc2db",
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@26ffd"
+      ],
+      "scenes": [
+        "6bde7af9-a9d7-4ead-9514-eae9eb0271ee@086c2"
+      ]
+    }
+  }
+}

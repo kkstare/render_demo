@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9688a79d-3924-4cb7-9cb3-fa9a995861b5",
+  "files": [],
+  "subMetas": {
+    "96c0a": {
+      "importer": "gltf-mesh",
+      "uuid": "9688a79d-3924-4cb7-9cb3-fa9a995861b5@96c0a",
+      "displayName": "",
+      "id": "96c0a",
+      "name": "polySurface1652.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "35d3f": {
+      "importer": "texture",
+      "uuid": "9688a79d-3924-4cb7-9cb3-fa9a995861b5@35d3f",
+      "displayName": "",
+      "id": "35d3f",
+      "name": "file26.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Graveyard.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fa7ef": {
+      "importer": "gltf-material",
+      "uuid": "9688a79d-3924-4cb7-9cb3-fa9a995861b5@fa7ef",
+      "displayName": "",
+      "id": "fa7ef",
+      "name": "Graveyard.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ef337": {
+      "importer": "gltf-scene",
+      "uuid": "9688a79d-3924-4cb7-9cb3-fa9a995861b5@ef337",
+      "displayName": "",
+      "id": "ef337",
+      "name": "Graveyard_03.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file26",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Graveyard.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "9688a79d-3924-4cb7-9cb3-fa9a995861b5@ef337",
+    "assetFinder": {
+      "meshes": [
+        "9688a79d-3924-4cb7-9cb3-fa9a995861b5@96c0a"
+      ],
+      "skeletons": [],
+      "textures": [
+        "9688a79d-3924-4cb7-9cb3-fa9a995861b5@35d3f"
+      ],
+      "materials": [
+        "9688a79d-3924-4cb7-9cb3-fa9a995861b5@fa7ef"
+      ],
+      "scenes": [
+        "9688a79d-3924-4cb7-9cb3-fa9a995861b5@ef337"
+      ]
+    }
+  }
+}

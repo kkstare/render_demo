@@ -1,0 +1,41 @@
+{
+  "ver": "1.0.22",
+  "importer": "image",
+  "imported": true,
+  "uuid": "f4a0d8b6-a5ff-45e2-b7a9-3958bd4ebc75",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "f4a0d8b6-a5ff-45e2-b7a9-3958bd4ebc75@6c48a",
+      "displayName": "map4",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f4a0d8b6-a5ff-45e2-b7a9-3958bd4ebc75"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "isRGBE": true,
+    "hasAlpha": true,
+    "type": "texture",
+    "redirect": "f4a0d8b6-a5ff-45e2-b7a9-3958bd4ebc75@6c48a"
+  }
+}

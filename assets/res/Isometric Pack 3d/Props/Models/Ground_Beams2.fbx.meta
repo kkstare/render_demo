@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "490aac39-8dfa-4158-9e7c-0c1f0080a0c9",
+  "files": [],
+  "subMetas": {
+    "120eb": {
+      "importer": "gltf-mesh",
+      "uuid": "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@120eb",
+      "displayName": "",
+      "id": "120eb",
+      "name": "polySurface1609.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "583b7": {
+      "importer": "texture",
+      "uuid": "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@583b7",
+      "displayName": "",
+      "id": "583b7",
+      "name": "file5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Fence_01.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1208": {
+      "importer": "gltf-material",
+      "uuid": "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@d1208",
+      "displayName": "",
+      "id": "d1208",
+      "name": "Fence.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "42efa": {
+      "importer": "gltf-scene",
+      "uuid": "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@42efa",
+      "displayName": "",
+      "id": "42efa",
+      "name": "Ground_Beams2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file5",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Fence_01.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@42efa",
+    "assetFinder": {
+      "meshes": [
+        "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@120eb"
+      ],
+      "skeletons": [],
+      "textures": [
+        "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@583b7"
+      ],
+      "materials": [
+        "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@d1208"
+      ],
+      "scenes": [
+        "490aac39-8dfa-4158-9e7c-0c1f0080a0c9@42efa"
+      ]
+    }
+  }
+}

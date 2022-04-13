@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "955a965e-f5e8-4c01-8de4-06bb18b1d9c6",
+  "files": [],
+  "subMetas": {
+    "620cb": {
+      "importer": "gltf-mesh",
+      "uuid": "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@620cb",
+      "displayName": "",
+      "id": "620cb",
+      "name": "polySurface41.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5189c": {
+      "importer": "texture",
+      "uuid": "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@5189c",
+      "displayName": "",
+      "id": "5189c",
+      "name": "file6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Lamp.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "720e9": {
+      "importer": "gltf-material",
+      "uuid": "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@720e9",
+      "displayName": "",
+      "id": "720e9",
+      "name": "Lamp1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ec97c": {
+      "importer": "gltf-scene",
+      "uuid": "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@ec97c",
+      "displayName": "",
+      "id": "ec97c",
+      "name": "Lamp1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file6",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Lamp.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@ec97c",
+    "assetFinder": {
+      "meshes": [
+        "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@620cb"
+      ],
+      "skeletons": [],
+      "textures": [
+        "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@5189c"
+      ],
+      "materials": [
+        "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@720e9"
+      ],
+      "scenes": [
+        "955a965e-f5e8-4c01-8de4-06bb18b1d9c6@ec97c"
+      ]
+    }
+  }
+}

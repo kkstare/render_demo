@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "daea099d-9744-4894-a5a1-8de010d6e63c",
+  "files": [],
+  "subMetas": {
+    "76b01": {
+      "importer": "gltf-mesh",
+      "uuid": "daea099d-9744-4894-a5a1-8de010d6e63c@76b01",
+      "displayName": "",
+      "id": "76b01",
+      "name": "polySurface1757.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "312ba": {
+      "importer": "texture",
+      "uuid": "daea099d-9744-4894-a5a1-8de010d6e63c@312ba",
+      "displayName": "",
+      "id": "312ba",
+      "name": "file8.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Bridge2.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4e7a4": {
+      "importer": "gltf-material",
+      "uuid": "daea099d-9744-4894-a5a1-8de010d6e63c@4e7a4",
+      "displayName": "",
+      "id": "4e7a4",
+      "name": "Bridge2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4958d": {
+      "importer": "gltf-scene",
+      "uuid": "daea099d-9744-4894-a5a1-8de010d6e63c@4958d",
+      "displayName": "",
+      "id": "4958d",
+      "name": "Wood_el_01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file8",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Bridge2.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "daea099d-9744-4894-a5a1-8de010d6e63c@4958d",
+    "assetFinder": {
+      "meshes": [
+        "daea099d-9744-4894-a5a1-8de010d6e63c@76b01"
+      ],
+      "skeletons": [],
+      "textures": [
+        "daea099d-9744-4894-a5a1-8de010d6e63c@312ba"
+      ],
+      "materials": [
+        "daea099d-9744-4894-a5a1-8de010d6e63c@4e7a4"
+      ],
+      "scenes": [
+        "daea099d-9744-4894-a5a1-8de010d6e63c@4958d"
+      ]
+    }
+  }
+}

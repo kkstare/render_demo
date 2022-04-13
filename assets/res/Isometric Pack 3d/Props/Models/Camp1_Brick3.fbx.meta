@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f",
+  "files": [],
+  "subMetas": {
+    "0a27a": {
+      "importer": "gltf-mesh",
+      "uuid": "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@0a27a",
+      "displayName": "",
+      "id": "0a27a",
+      "name": "polySurface1515.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "491b8": {
+      "importer": "texture",
+      "uuid": "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@491b8",
+      "displayName": "",
+      "id": "491b8",
+      "name": "file25.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Camp_01.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f1487": {
+      "importer": "gltf-material",
+      "uuid": "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@f1487",
+      "displayName": "",
+      "id": "f1487",
+      "name": "Camp1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9d9e4": {
+      "importer": "gltf-scene",
+      "uuid": "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@9d9e4",
+      "displayName": "",
+      "id": "9d9e4",
+      "name": "Camp1_Brick3.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file25",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Camp_01.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@9d9e4",
+    "assetFinder": {
+      "meshes": [
+        "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@0a27a"
+      ],
+      "skeletons": [],
+      "textures": [
+        "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@491b8"
+      ],
+      "materials": [
+        "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@f1487"
+      ],
+      "scenes": [
+        "ae739f4e-243b-4cc1-8afc-b2f1656c2d5f@9d9e4"
+      ]
+    }
+  }
+}

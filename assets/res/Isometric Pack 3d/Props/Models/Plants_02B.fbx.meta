@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d9abb075-ee98-487d-ae39-7df27f9cfab1",
+  "files": [],
+  "subMetas": {
+    "2c7c4": {
+      "importer": "gltf-mesh",
+      "uuid": "d9abb075-ee98-487d-ae39-7df27f9cfab1@2c7c4",
+      "displayName": "",
+      "id": "2c7c4",
+      "name": "polySurface1071.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7af42": {
+      "importer": "texture",
+      "uuid": "d9abb075-ee98-487d-ae39-7df27f9cfab1@7af42",
+      "displayName": "",
+      "id": "7af42",
+      "name": "file22.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Plants1.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fbfee": {
+      "importer": "gltf-material",
+      "uuid": "d9abb075-ee98-487d-ae39-7df27f9cfab1@fbfee",
+      "displayName": "",
+      "id": "fbfee",
+      "name": "Plants1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c6f9b": {
+      "importer": "gltf-scene",
+      "uuid": "d9abb075-ee98-487d-ae39-7df27f9cfab1@c6f9b",
+      "displayName": "",
+      "id": "c6f9b",
+      "name": "Plants_02B.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file22",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Plants1.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "d9abb075-ee98-487d-ae39-7df27f9cfab1@c6f9b",
+    "assetFinder": {
+      "meshes": [
+        "d9abb075-ee98-487d-ae39-7df27f9cfab1@2c7c4"
+      ],
+      "skeletons": [],
+      "textures": [
+        "d9abb075-ee98-487d-ae39-7df27f9cfab1@7af42"
+      ],
+      "materials": [
+        "d9abb075-ee98-487d-ae39-7df27f9cfab1@fbfee"
+      ],
+      "scenes": [
+        "d9abb075-ee98-487d-ae39-7df27f9cfab1@c6f9b"
+      ]
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45",
+  "files": [],
+  "subMetas": {
+    "eea31": {
+      "importer": "gltf-mesh",
+      "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45@eea31",
+      "displayName": "",
+      "id": "eea31",
+      "name": "polySurface34_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a39a5": {
+      "importer": "texture",
+      "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45@a39a5",
+      "displayName": "",
+      "id": "a39a5",
+      "name": "file10.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Trees_01.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Trees_01.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5ba40": {
+      "importer": "gltf-material",
+      "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45@5ba40",
+      "displayName": "",
+      "id": "5ba40",
+      "name": "Tree1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c078d": {
+      "importer": "gltf-material",
+      "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45@c078d",
+      "displayName": "",
+      "id": "c078d",
+      "name": "Trees1_Alpha.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f5478": {
+      "importer": "gltf-scene",
+      "uuid": "4fd093fb-9a0b-40ff-a225-3198c0383d45@f5478",
+      "displayName": "",
+      "id": "f5478",
+      "name": "Tree1_5.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file10",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Trees_01.png"
+      },
+      {
+        "name": "file2",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Trees_01.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "4fd093fb-9a0b-40ff-a225-3198c0383d45@f5478",
+    "assetFinder": {
+      "meshes": [
+        "4fd093fb-9a0b-40ff-a225-3198c0383d45@eea31"
+      ],
+      "skeletons": [],
+      "textures": [
+        "4fd093fb-9a0b-40ff-a225-3198c0383d45@a39a5",
+        "4fd093fb-9a0b-40ff-a225-3198c0383d45@e873a"
+      ],
+      "materials": [
+        "4fd093fb-9a0b-40ff-a225-3198c0383d45@5ba40",
+        "4fd093fb-9a0b-40ff-a225-3198c0383d45@c078d"
+      ],
+      "scenes": [
+        "4fd093fb-9a0b-40ff-a225-3198c0383d45@f5478"
+      ]
+    }
+  }
+}

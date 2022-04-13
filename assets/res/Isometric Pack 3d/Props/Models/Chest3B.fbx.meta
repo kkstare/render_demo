@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "baafb8a3-068d-4ff3-87bc-ed4ea33d1811",
+  "files": [],
+  "subMetas": {
+    "bd03e": {
+      "importer": "gltf-mesh",
+      "uuid": "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@bd03e",
+      "displayName": "",
+      "id": "bd03e",
+      "name": "polySurface380.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6b754": {
+      "importer": "texture",
+      "uuid": "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@6b754",
+      "displayName": "",
+      "id": "6b754",
+      "name": "file9.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/chests.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f691d": {
+      "importer": "gltf-material",
+      "uuid": "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@f691d",
+      "displayName": "",
+      "id": "f691d",
+      "name": "Chests.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5aeb9": {
+      "importer": "gltf-scene",
+      "uuid": "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@5aeb9",
+      "displayName": "",
+      "id": "5aeb9",
+      "name": "Chest3B.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file9",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/chests.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@5aeb9",
+    "assetFinder": {
+      "meshes": [
+        "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@bd03e"
+      ],
+      "skeletons": [],
+      "textures": [
+        "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@6b754"
+      ],
+      "materials": [
+        "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@f691d"
+      ],
+      "scenes": [
+        "baafb8a3-068d-4ff3-87bc-ed4ea33d1811@5aeb9"
+      ]
+    }
+  }
+}

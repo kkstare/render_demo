@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "98a97b24-359c-42f7-a399-8d2ae619e017",
+  "files": [],
+  "subMetas": {
+    "6db5f": {
+      "importer": "gltf-mesh",
+      "uuid": "98a97b24-359c-42f7-a399-8d2ae619e017@6db5f",
+      "displayName": "",
+      "id": "6db5f",
+      "name": "polySurface657.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cafc8": {
+      "importer": "texture",
+      "uuid": "98a97b24-359c-42f7-a399-8d2ae619e017@cafc8",
+      "displayName": "",
+      "id": "cafc8",
+      "name": "file19.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Stairs.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c65ff": {
+      "importer": "gltf-material",
+      "uuid": "98a97b24-359c-42f7-a399-8d2ae619e017@c65ff",
+      "displayName": "",
+      "id": "c65ff",
+      "name": "Stairs.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "39c23": {
+      "importer": "gltf-scene",
+      "uuid": "98a97b24-359c-42f7-a399-8d2ae619e017@39c23",
+      "displayName": "",
+      "id": "39c23",
+      "name": "Stairs_Debris2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file19",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Stairs.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "98a97b24-359c-42f7-a399-8d2ae619e017@39c23",
+    "assetFinder": {
+      "meshes": [
+        "98a97b24-359c-42f7-a399-8d2ae619e017@6db5f"
+      ],
+      "skeletons": [],
+      "textures": [
+        "98a97b24-359c-42f7-a399-8d2ae619e017@cafc8"
+      ],
+      "materials": [
+        "98a97b24-359c-42f7-a399-8d2ae619e017@c65ff"
+      ],
+      "scenes": [
+        "98a97b24-359c-42f7-a399-8d2ae619e017@39c23"
+      ]
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a8e0e63f-1d07-4029-a32b-df6cd738d963",
+  "files": [],
+  "subMetas": {
+    "8ca1a": {
+      "importer": "gltf-mesh",
+      "uuid": "a8e0e63f-1d07-4029-a32b-df6cd738d963@8ca1a",
+      "displayName": "",
+      "id": "8ca1a",
+      "name": "polySurface1771.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "40c6b": {
+      "importer": "texture",
+      "uuid": "a8e0e63f-1d07-4029-a32b-df6cd738d963@40c6b",
+      "displayName": "",
+      "id": "40c6b",
+      "name": "file30.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Magic_Pillars.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9bed3": {
+      "importer": "gltf-material",
+      "uuid": "a8e0e63f-1d07-4029-a32b-df6cd738d963@9bed3",
+      "displayName": "",
+      "id": "9bed3",
+      "name": "Magic_Pillars.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ef5c6": {
+      "importer": "gltf-scene",
+      "uuid": "a8e0e63f-1d07-4029-a32b-df6cd738d963@ef5c6",
+      "displayName": "",
+      "id": "ef5c6",
+      "name": "Magic_Shrine1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file30",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Magic_Pillars.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "a8e0e63f-1d07-4029-a32b-df6cd738d963@ef5c6",
+    "assetFinder": {
+      "meshes": [
+        "a8e0e63f-1d07-4029-a32b-df6cd738d963@8ca1a"
+      ],
+      "skeletons": [],
+      "textures": [
+        "a8e0e63f-1d07-4029-a32b-df6cd738d963@40c6b"
+      ],
+      "materials": [
+        "a8e0e63f-1d07-4029-a32b-df6cd738d963@9bed3"
+      ],
+      "scenes": [
+        "a8e0e63f-1d07-4029-a32b-df6cd738d963@ef5c6"
+      ]
+    }
+  }
+}

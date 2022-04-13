@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e52fa799-4541-4c6a-bfae-2cc91b48563f",
+  "files": [],
+  "subMetas": {
+    "88677": {
+      "importer": "gltf-material",
+      "uuid": "e52fa799-4541-4c6a-bfae-2cc91b48563f@88677",
+      "displayName": "",
+      "id": "88677",
+      "name": "Mine1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0edd1": {
+      "importer": "gltf-mesh",
+      "uuid": "e52fa799-4541-4c6a-bfae-2cc91b48563f@0edd1",
+      "displayName": "",
+      "id": "0edd1",
+      "name": "polySurface1181.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c86f2": {
+      "importer": "texture",
+      "uuid": "e52fa799-4541-4c6a-bfae-2cc91b48563f@c86f2",
+      "displayName": "",
+      "id": "c86f2",
+      "name": "file24.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Mine1.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "691ee": {
+      "importer": "gltf-scene",
+      "uuid": "e52fa799-4541-4c6a-bfae-2cc91b48563f@691ee",
+      "displayName": "",
+      "id": "691ee",
+      "name": "Mine_tracks2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file24",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Mine1.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "e52fa799-4541-4c6a-bfae-2cc91b48563f@691ee",
+    "assetFinder": {
+      "meshes": [
+        "e52fa799-4541-4c6a-bfae-2cc91b48563f@0edd1"
+      ],
+      "skeletons": [],
+      "textures": [
+        "e52fa799-4541-4c6a-bfae-2cc91b48563f@c86f2"
+      ],
+      "materials": [
+        "e52fa799-4541-4c6a-bfae-2cc91b48563f@88677"
+      ],
+      "scenes": [
+        "e52fa799-4541-4c6a-bfae-2cc91b48563f@691ee"
+      ]
+    }
+  }
+}

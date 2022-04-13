@@ -1,0 +1,106 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "dfb1bf3f-7683-4146-8e0c-a18bc2226eda",
+  "files": [],
+  "subMetas": {
+    "9b8b9": {
+      "importer": "gltf-mesh",
+      "uuid": "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@9b8b9",
+      "displayName": "",
+      "id": "9b8b9",
+      "name": "polySurface2121.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9a420": {
+      "importer": "texture",
+      "uuid": "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@9a420",
+      "displayName": "",
+      "id": "9a420",
+      "name": "file12.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Grass_Flowers1.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1834a": {
+      "importer": "gltf-material",
+      "uuid": "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@1834a",
+      "displayName": "",
+      "id": "1834a",
+      "name": "Grass.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eeb64": {
+      "importer": "gltf-scene",
+      "uuid": "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@eeb64",
+      "displayName": "",
+      "id": "eeb64",
+      "name": "Plants_24.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file12",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Grass_Flowers1.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@eeb64",
+    "assetFinder": {
+      "meshes": [
+        "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@9b8b9"
+      ],
+      "skeletons": [],
+      "textures": [
+        "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@9a420"
+      ],
+      "materials": [
+        "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@1834a"
+      ],
+      "scenes": [
+        "dfb1bf3f-7683-4146-8e0c-a18bc2226eda@eeb64"
+      ]
+    }
+  }
+}

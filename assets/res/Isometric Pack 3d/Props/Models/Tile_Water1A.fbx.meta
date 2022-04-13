@@ -1,0 +1,123 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cb8f3027-5bfb-4b03-8987-97c515987742",
+  "files": [],
+  "subMetas": {
+    "a96ca": {
+      "importer": "gltf-mesh",
+      "uuid": "cb8f3027-5bfb-4b03-8987-97c515987742@a96ca",
+      "displayName": "",
+      "id": "a96ca",
+      "name": "polySurface2105_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "cb8f3027-5bfb-4b03-8987-97c515987742@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/Tile1.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "90d53": {
+      "importer": "gltf-material",
+      "uuid": "cb8f3027-5bfb-4b03-8987-97c515987742@90d53",
+      "displayName": "",
+      "id": "90d53",
+      "name": "Tile1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dfbe1": {
+      "importer": "gltf-material",
+      "uuid": "cb8f3027-5bfb-4b03-8987-97c515987742@dfbe1",
+      "displayName": "",
+      "id": "dfbe1",
+      "name": "Water.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de57f": {
+      "importer": "gltf-scene",
+      "uuid": "cb8f3027-5bfb-4b03-8987-97c515987742@de57f",
+      "displayName": "",
+      "id": "de57f",
+      "name": "Tile_Water1A.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/Tile1.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "cb8f3027-5bfb-4b03-8987-97c515987742@de57f",
+    "assetFinder": {
+      "meshes": [
+        "cb8f3027-5bfb-4b03-8987-97c515987742@a96ca"
+      ],
+      "skeletons": [],
+      "textures": [
+        "cb8f3027-5bfb-4b03-8987-97c515987742@d20e9"
+      ],
+      "materials": [
+        "cb8f3027-5bfb-4b03-8987-97c515987742@90d53",
+        "cb8f3027-5bfb-4b03-8987-97c515987742@dfbe1"
+      ],
+      "scenes": [
+        "cb8f3027-5bfb-4b03-8987-97c515987742@de57f"
+      ]
+    }
+  }
+}

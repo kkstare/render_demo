@@ -17,8 +17,9 @@ CCEffect %{
         cullMode: none
       properties:
         alphaThreshold: { value: 0.5 }
-        renderType: {value: 0.5 }
+        renderType: {value: 3.5 }
         uSize: {value: [300,300] }
+        WaveCentre: {value: [-0.5,-0.5] }
         
 
 }%
@@ -68,10 +69,11 @@ CCProgram sprite-fs %{
   precision highp float;
   #include <embedded-alpha>
   #include <alpha-test>
-
+  #include <cc-global>
   in vec4 color;
   uniform block{
     vec2 uSize;
+    vec2 WaveCentre;
     float renderType;
 
   };
@@ -107,7 +109,178 @@ CCProgram sprite-fs %{
 	    vec3 target = vec3(mag);
 	    return vec4(mix(texColor, target, Intensity), texture(Tex, UV).a);
 	}
-	    
+
+  //高斯模糊
+  vec4 GaussianBlur_main(sampler2D Tex, vec2 UV, vec2 Size, float Intensity) 
+	{
+	    vec4 sum = vec4(0);
+	    vec2 offset = vec2(0.0);
+	    vec2 normalizedSize = vec2(1.0 / Size);
+	    offset = normalizedSize * vec2(-2.0, -2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 1.0;
+	    offset = normalizedSize * vec2(-1.0, -2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(0.0, -2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 7.0;
+	    offset = normalizedSize * vec2(1.0, -2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(2.0, -2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 1.0;
+	    offset = normalizedSize * vec2(-2.0, -1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(-1.0, -1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 16.0;
+	    offset = normalizedSize * vec2(0.0, -1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 26.0;
+	    offset = normalizedSize * vec2(1.0, -1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 16.0;
+	    offset = normalizedSize * vec2(2.0, -1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(-2.0, 0.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 7.0;
+	    offset = normalizedSize * vec2(-1.0, 0.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 26.0;
+	    offset = normalizedSize * vec2(0.0, 0.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 41.0;
+	    offset = normalizedSize * vec2(1.0, 0.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 26.0;
+	    offset = normalizedSize * vec2(2.0, 0.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 7.0;
+	    offset = normalizedSize * vec2(-2.0, 1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(-1.0, 1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 16.0;
+	    offset = normalizedSize * vec2(0.0, 1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 26.0;
+	    offset = normalizedSize * vec2(1.0, 1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 16.0;
+	    offset = normalizedSize * vec2(2.0, 1.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(-2.0, 2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 1.0;
+	    offset = normalizedSize * vec2(-1.0, 2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(0.0, 2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 7.0;
+	    offset = normalizedSize * vec2(1.0, 2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 4.0;
+	    offset = normalizedSize * vec2(2.0, 2.0) * Intensity;
+	    sum += texture(Tex, UV + offset) * 1.0;               
+	    return vec4((sum / 273.0).rgb, texture(Tex, UV).a);
+	}
+
+  //下雨
+  vec3 N13(float p) 
+	{
+	   vec3 p3 = fract(vec3(p) * vec3(0.1031, 0.11369, 0.13787));
+	   p3 += dot(p3, p3.yzx + 19.19);
+	   return fract(vec3((p3.x + p3.y) * p3.z, (p3.x + p3.z) * p3.y, (p3.y + p3.z) * p3.x));
+	}
+	vec4 N14(float t) 
+	{
+	    return fract(sin(t*vec4(123.0, 1024.0, 1456.0, 264.0)) * vec4(6547.0, 345.0, 8799.0, 1564.0));
+	}
+	float N15(float t) 
+	{
+	    return fract(sin(t * 12345.564) * 7658.76);
+	}
+	float Saw(float b, float t) 
+	{
+	    return smoothstep(0.0, b, t) * smoothstep(1.0, b, t);
+	}
+	vec2 dropLayer(vec2 uv, float t) 
+	{
+	    vec2 UV = uv;    
+	    // uv.y += t * 0.75;
+      uv.y -= t;
+	    vec2 a = vec2(6.0, 1.0);
+	    vec2 grid = a *2.0;
+	    vec2 id = floor(uv * grid);
+	    float colShift = N15(id.x); 
+	    // uv.y += colShift;
+      uv.y -= colShift;
+
+	    id = floor(uv * grid);
+	    vec3 n = N13(id.x * 35.2 + id.y * 2376.1);
+	    vec2 st = fract(uv * grid) - vec2(0.5, 0);
+	    float x = n.x - 0.5;
+	    float y = UV.y * 20.0;
+	    float wiggle = sin(y + sin(y));
+	    x += wiggle * (0.5 - abs(x)) * (n.z - 0.5);
+	    x *= 0.7;
+	    float ti = fract(t + n.z);
+	    y = (Saw(0.85, ti) - 0.5) * 0.9 + 0.5;
+	    vec2 p = vec2(x, y);
+	    float d = length((st-p) * a.yx);
+	    float mainDrop = smoothstep(0.4, 0.0, d);
+	    float r = sqrt(smoothstep(1.0, y, st.y));
+	    float cd = abs(st.x - x);
+	    float trail = smoothstep(0.23 * r, 0.15 * r * r, cd);
+	    float trailFront = smoothstep(-0.02, 0.02, st.y - y);
+	    trail *= trailFront * r * r;
+	    y = UV.y;
+	    float trail2 = smoothstep(0.2 * r, 0.0, cd);
+	    float droplets = max(0.0, (sin(y * (1.0 - y) * 120.0) - st.y)) * trail2 * trailFront * n.z;
+	    y = fract(y * 10.0) + (st.y - 0.5);
+      // y=1.0-y;
+	    float dd = length(st - vec2(x, y));
+	    droplets = smoothstep(0.3, 0.0, dd);
+	    float m = mainDrop + droplets * r * trailFront;
+	    return vec2(m, trail);
+	}
+
+	float StaticDrops(vec2 uv, float t) 
+	{
+	    uv *= 40.;    
+	    vec2 id = floor(uv);
+	    uv = fract(uv) - 0.5;
+	    vec3 n = N13(id.x * 107.45 + id.y * 3543.654);
+	    vec2 p = (n.xy - 0.5) * 0.7;
+	    float d = length(uv-p);
+	    float fade = Saw(0.025, fract(t + n.z));
+	    float c = smoothstep(0.3, 0.0, d) * fract(n.z * 10.0) * fade;
+	    return c;
+	}
+	vec2 Drops(vec2 uv, float t, float l0, float l1, float l2) 
+	{
+	    float s = StaticDrops(uv, t) * l0; 
+	    vec2 m1 = dropLayer(uv, t) * l1;
+	    vec2 m2 = dropLayer(vec2(0.0), t) * l2;
+	    float c = s + m1.x + m2.x;
+	    c = smoothstep(.3, 1.0, c);
+	    return vec2(c, max(m1.y * l0, m2.y * l1));
+	}  
+	vec4 RainDrop_main(sampler2D Tex, vec2 UV, float Seed, float Speed) 
+	{
+	    float T = Seed * Speed;
+	    float t = T*.5 * -1.0;
+	    float rainAmount =  3.076;
+	    float maxBlur = mix(3., 6., rainAmount);
+	    float minBlur = 1.216;
+	    float staticDrops = smoothstep(-.5, 1., rainAmount)*0.5;
+	    float layer1 = smoothstep(.25, .75, rainAmount);
+	    float layer2 = smoothstep(.0, .5, rainAmount);
+	    vec2 c = Drops(UV, t, staticDrops, layer1, layer2);
+	    vec2 e = vec2(.001, 0.);
+	    float cx = Drops(UV + e, t, staticDrops, layer1, layer2).x;
+	    float cy = Drops(UV + e.yx, t, staticDrops, layer1, layer2).x;
+	    vec2 n = vec2(cx - c.x, cy - c.x);
+	    float focus = mix(maxBlur - c.y, minBlur, smoothstep(0.0, 0.0, c.x));
+	    vec3 col = texture(Tex, UV + n, focus).rgb;
+	    float colFade = sin(t*.2)*.5+.5;
+	    col *= mix(vec3(1.), vec3(.8, .9, 1.3), 0.0);
+	    return vec4(col, texture(Tex, UV).a);
+	}
+
+
+  //下雪
+  float rnd(float x) {
+      return fract(sin(dot(vec2(x+47.49,38.2467/(x+2.3)), vec2(12.9898, 78.233)))* (43758.5453));
+  }
+
+  float drawCircle(vec2 uv, vec2 center, float radius) {
+      return 1.0 - smoothstep(0.0, radius, length(uv - center));
+  }
 
   vec4 frag () {
     vec4 o = vec4(1, 1, 1, 1);
@@ -133,7 +306,7 @@ CCProgram sprite-fs %{
       float _b = color.r * 0.272 + color.g * 0.534 + color.b * 0.131;
       o = vec4(_r, _g, _b, color.a);
     }else if(renderType < 3.0){
-      //熔铸
+      //暗调
       vec4 col = o;
       float _r = col.r*col.r;
       float _g = col.g*col.g;
@@ -142,32 +315,39 @@ CCProgram sprite-fs %{
       o = vec4(_r, _g, _b, col.a);
     }else if(renderType < 4.0){
       //铅笔素描
-      o =  PencilSketch_main(cc_spriteTexture, uv0, uSize, 0.5);
+      o =  PencilSketch_main(cc_spriteTexture, uv0, uSize, 0.2);
     }else if(renderType < 5.0){
       //睁眼效果
       float Intensity = 3.0;
-      float subDis = 0.3;
+      float subDis = 0.15 + abs(fract(cc_time.x)-0.5)/10.0;
 
       float dis = distance(uv0,vec2(0.5,0.5) );
       float grayValue = 0.5 - Intensity*(dis-subDis);
       o *= grayValue; 
     }else if(renderType < 6.0){
-      //两侧径向模糊
-      vec2 Center = vec2(0.5,0.5);
-      vec2 normalizedSize = vec2(1.0 / uSize);
-      float Intensity = 0.1;
-      vec2 UV = uv0;
+        //两侧径向模糊
+        float Intensity = (abs(uv0.x-0.5)-0.3)/2.0 ;
+        if(Intensity<0.0){
+          Intensity = 0.0;
+        }
 
-      vec4 sum = vec4(0.0);
-      UV += normalizedSize * 0.5 - Center;
-      for (float i = 0.0; i < 30.0; i++) {
-          float offset = 1.0 - Intensity * (i / (30.0 - 1.0));
-          sum += CCSampleWithAlphaSeparated(cc_spriteTexture, UV * offset + Center);
-      }
-      return vec4(sum / (30.0 - 1.0));
+        vec2 Center = vec2(0.5,0.5);
+        vec2 normalizedSize = vec2(1.0 / uSize);
+        vec2 UV = uv0;
+
+        vec4 sum = vec4(0.0);
+        UV += normalizedSize * 0.5 - Center;
+        for (float i = 0.0; i < 30.0; i++) {
+            float offset = 1.0 - Intensity * (i / (30.0 - 1.0));
+            sum += CCSampleWithAlphaSeparated(cc_spriteTexture, UV * offset + Center);
+        }
+        return vec4(sum / (30.0 - 1.0));
+      
+  
     }else if(renderType < 7.0){
-      float Seed = 0.5;
-      float Speed = 0.5;
+
+      //双眼
+      float Seed = 0.5 + abs(fract(cc_time.x)-0.5)/2.;
 
       vec2 uv = uv0;
       vec4 col = CCSampleWithAlphaSeparated(cc_spriteTexture, uv);
@@ -182,6 +362,35 @@ CCProgram sprite-fs %{
       vec3 rgb = mix( color, col.rgb, smoothstep( 0.5, 0.5 + gradientLength, d ) );
       return vec4( rgb, col.a);
     }else if(renderType < 8.0){
+        //熔铸
+        // vec4 col = o;
+        // vec4 res;
+        // res.r = col.r*0.5/(col.g+col.b);
+        // res.g = col.g*0.5/(col.r+col.b);
+        // res.b = col.b*0.5/(col.r+col.g);
+        // res.a = 1.0;
+        // return res;
+
+        //冰冻
+        // vec4 col = o;
+        // vec4 res;
+        // res.r = abs(col.r-col.g-col.b)*3.0/2.0;
+        // res.g = abs(col.g-col.b-col.r)*3.0/2.0;
+        // res.b = abs(col.b-col.r-col.g)*3.0/2.0;
+        // res.a = 1.0;
+        // return res;
+        
+        //反相
+        // vec4 col = o;
+        // vec4 res;
+        // res.r = col.g*col.b;
+        // res.g = col.r*col.b;
+        // res.b = col.r*col.g;
+        // res.a = 1.0;
+        // return res;
+
+
+
       // vec2 uv = uv0;
       // vec4 tex0 = CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
       // vec4 tex1 = CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
@@ -191,7 +400,106 @@ CCProgram sprite-fs %{
       // blend = step(a, blend);
       // col = mix(tex0, tex1, blend);
       // return col;
+    }else if(renderType < 9.0){
+      //下雪
+      const float _SnowflakeAmount = 200.0;
+      float _BlizardFactor = 0.2;
+
+      vec2 uv = uv0;
+
+      float j;
+      for(float i=0.0; i<_SnowflakeAmount; i++) {
+        j = float(i);
+        float speed = 0.3+rnd(cos(j))*(0.7+0.5*cos(j/(float(_SnowflakeAmount)*0.25)));
+        vec2 center = vec2((0.25-uv.y)*_BlizardFactor+rnd(j)+0.1*cos(cc_time.x+sin(j)), mod(sin(j)-speed*(cc_time.x*1.5*(0.1+_BlizardFactor)), 1.0));
+        o += vec4(0.9*drawCircle(uv, center, 0.001+speed*0.012));
+      }
+    }else if(renderType < 10.0){
+      //下雨
+      float speed = 0.5;
+
+      return RainDrop_main(cc_spriteTexture, uv0, cc_time.x, speed);
+    }else if(renderType < 11.0){
+      //高斯模糊
+      vec2 size = vec2(300,300);
+      return GaussianBlur_main(cc_spriteTexture,uv0,size,3.0);
+    }else if(renderType < 12.0){
+      //噪点
+      vec2 uv = uv0;
+      float strength = 16.0;  
+      float x = (uv.x + 4.0 ) * (uv.y + 4.0 ) * (cc_time.x * 10.0);
+
+      vec4 grain = vec4(mod((mod(x, 13.0) + 1.0) * (mod(x, 123.0) + 1.0), 0.01)-0.005) * strength;
+      
+  
+      o = o + grain;
+        // if(uv.x > 0.5)
+        // {
+        //   grain = 1.0 - grain;
+        //   fragColor = color * grain;
+        // }
+        // else
+        // {
+        // fragColor = color + grain;
+        // }
+   
+    }else if(renderType<13.0){
+      //分镜
+      o = CCSampleWithAlphaSeparated(cc_spriteTexture, uv0*2.0);
+    }else if(renderType<14.0){
+        //Sawtooth function to pulse from centre.
+      float offset = (cc_time.x- floor(cc_time.x))/cc_time.x;
+      float CurrentTime = (cc_time.x)*(offset);    
+
+      vec2 iResolution = vec2(960,640);
+
+      vec3 WaveParams = vec3(10.0, 0.8, 0.1 ); 
+
+      vec2 uv = uv0;
+
+      if(WaveCentre.x<0.0 || WaveCentre.y<0.0){
+        return o;
+      }
+
+      // float ratio = iResolution.y/iResolution.x;
+        
+        //Use this if you want to place the centre with the mouse instead
+      //vec2 WaveCentre = vec2( iMouse.xy / iResolution.xy );
+          
+      // WaveCentre = vec2(0.5, 0.5);
+        // WaveCentre.y *= ratio; 
+      
+      // vec2 texCoord = gl_FragCoord.xy / iResolution.xy;      
+        // texCoord.y *= ratio;    
+
+      float Dist = distance(uv, WaveCentre);
+        
+      
+      vec4 Color = texture(cc_spriteTexture, uv);
+        
+      //Only distort the pixels within the parameter distance from the centre
+      if ((Dist <= ((CurrentTime) + (WaveParams.z))) && 
+        (Dist >= ((CurrentTime) - (WaveParams.z)))) 
+        {
+              //The pixel offset distance based on the input parameters
+          float Diff = (Dist - CurrentTime); 
+          float ScaleDiff = (1.0 - pow(abs(Diff * WaveParams.x), WaveParams.y)); 
+          float DiffTime = (Diff  * ScaleDiff);
+              
+              //The direction of the distortion
+          vec2 DiffTexCoord = normalize(uv - WaveCentre);         
+              
+              //Perform the distortion and reduce the effect over time
+          uv += ((DiffTexCoord * DiffTime) / (CurrentTime * Dist * 40.0));
+          Color = texture(cc_spriteTexture, uv);
+              
+              //Blow out the color and reduce the effect over time
+          Color += (Color * ScaleDiff) / (CurrentTime * Dist * 40.0);
+        } 
+          
+        o = Color; 
     }
+
 
    
     ALPHA_TEST(o);

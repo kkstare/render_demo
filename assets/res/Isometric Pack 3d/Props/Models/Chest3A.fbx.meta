@@ -1,0 +1,142 @@
+{
+  "ver": "2.1.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "56bb7bb2-621f-4087-9184-55842418f09d",
+  "files": [],
+  "subMetas": {
+    "d607f": {
+      "importer": "gltf-mesh",
+      "uuid": "56bb7bb2-621f-4087-9184-55842418f09d@d607f",
+      "displayName": "",
+      "id": "d607f",
+      "name": "Lid.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dcc1d": {
+      "importer": "gltf-mesh",
+      "uuid": "56bb7bb2-621f-4087-9184-55842418f09d@dcc1d",
+      "displayName": "",
+      "id": "dcc1d",
+      "name": "gold.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "444de": {
+      "importer": "gltf-mesh",
+      "uuid": "56bb7bb2-621f-4087-9184-55842418f09d@444de",
+      "displayName": "",
+      "id": "444de",
+      "name": "Box.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6b754": {
+      "importer": "texture",
+      "uuid": "56bb7bb2-621f-4087-9184-55842418f09d@6b754",
+      "displayName": "",
+      "id": "6b754",
+      "name": "file9.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/res/Isometric Pack 3d/Props/Textures/chests.png"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f691d": {
+      "importer": "gltf-material",
+      "uuid": "56bb7bb2-621f-4087-9184-55842418f09d@f691d",
+      "displayName": "",
+      "id": "f691d",
+      "name": "Chests.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8833b": {
+      "importer": "gltf-scene",
+      "uuid": "56bb7bb2-621f-4087-9184-55842418f09d@8833b",
+      "displayName": "",
+      "id": "8833b",
+      "name": "Chest3A.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file9",
+        "uri": "db://assets/res/Isometric Pack 3d/Props/Textures/chests.png"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "56bb7bb2-621f-4087-9184-55842418f09d@8833b",
+    "assetFinder": {
+      "meshes": [
+        "56bb7bb2-621f-4087-9184-55842418f09d@d607f",
+        "56bb7bb2-621f-4087-9184-55842418f09d@dcc1d",
+        "56bb7bb2-621f-4087-9184-55842418f09d@444de"
+      ],
+      "skeletons": [],
+      "textures": [
+        "56bb7bb2-621f-4087-9184-55842418f09d@6b754"
+      ],
+      "materials": [
+        "56bb7bb2-621f-4087-9184-55842418f09d@f691d"
+      ],
+      "scenes": [
+        "56bb7bb2-621f-4087-9184-55842418f09d@8833b"
+      ]
+    }
+  }
+}
