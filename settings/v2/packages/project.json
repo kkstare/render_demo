@@ -1,20 +1,24 @@
 {
   "layer": [
     {
-      "name": "first",
+      "name": "color",
       "value": 1
     },
     {
-      "name": "color",
+      "name": "touch",
       "value": 2
     },
     {
-      "name": "blur",
+      "name": "weather",
       "value": 4
     },
     {
-      "name": "final",
+      "name": "other",
       "value": 8
+    },
+    {
+      "name": "spUI",
+      "value": 16
     }
   ]
 }
