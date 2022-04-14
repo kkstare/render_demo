@@ -1,0 +1,40 @@
+{
+  "ver": "1.2.1",
+  "importer": "render-texture",
+  "imported": true,
+  "uuid": "492ad22b-5c02-4de2-8ae2-5e9ee29f68db",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {
+    "f9941": {
+      "importer": "rt-sprite-frame",
+      "uuid": "492ad22b-5c02-4de2-8ae2-5e9ee29f68db@f9941",
+      "displayName": "touch",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "imageUuidOrDatabaseUri": "492ad22b-5c02-4de2-8ae2-5e9ee29f68db",
+        "width": 960,
+        "height": 640
+      },
+      "ver": "1.0.0",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "width": 960,
+    "height": 640,
+    "anisotropy": 0,
+    "minfilter": "linear",
+    "magfilter": "linear",
+    "mipfilter": "none",
+    "wrapModeS": "repeat",
+    "wrapModeT": "repeat",
+    "redirect": "492ad22b-5c02-4de2-8ae2-5e9ee29f68db@f9941"
+  }
+}

@@ -23,7 +23,7 @@ export class TouchCtrl extends Component {
     }
   
     private onTouchRotateMove(event: EventTouch) {
-        console.log("touch")
+
         let rotateDelta = event.getDelta();
 		if (rotateDelta.length() > 1) {
             this.rotateByCenter(new Vec3(rotateDelta.y * 0.5, -rotateDelta.x, 0));
@@ -31,18 +31,18 @@ export class TouchCtrl extends Component {
 
     }
     onTouchEnd(e:Touch) {
-        // console.log(e.getLocationInView())
+
         let pos = e.getLocation()
         let winWidth = view.getVisibleSizeInPixel().width
         let winHeight = view.getVisibleSizeInPixel().height
-        console.log(pos.x / winWidth, pos.y / winHeight)
+
         
         director.emit("touchEnd",[pos.x / winWidth,(pos.y / winHeight)])
     }
         /**视角旋转-围绕中心 */
     rotateByCenter(addVec3: Vec3) {
-        console.log(addVec3)
 
+        
         let mEv = this.camera.node.eulerAngles.clone().add(addVec3.multiplyScalar(3));
 
         this.camera.node.eulerAngles = this.camera.node.eulerAngles.clone().lerp(mEv, 0.1);
